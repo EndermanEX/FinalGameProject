@@ -161,6 +161,12 @@ namespace StarterAssets
             Move();
         }
 
+        public void OnAttack()
+        {
+            Debug.Log("Attack");
+            _animator.Play("Attack");
+        }
+
         private void LateUpdate()
         {
             CameraRotation();
