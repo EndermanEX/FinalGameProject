@@ -67,6 +67,7 @@ public class EnemyAI : MonoBehaviour
         float _randomX = Random.Range(-_patrolRange, _patrolRange);
 
         _patrolPoint = new Vector3(transform.position.x + _randomX, transform.position.y, transform.position.z + _randomZ);
+        //nevmesh.sampleposition
 
         if (Physics.Raycast(_patrolPoint, -transform.up, 2f, _groundLayer))
             _patrolPointSet = true;

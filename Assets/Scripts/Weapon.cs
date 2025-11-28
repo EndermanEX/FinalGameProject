@@ -11,7 +11,12 @@ public class Weapon : MonoBehaviour
     {
         if (canHit)
         {
-
+            Health _enemyHealth = other.GetComponent<Health>();
+            if (_enemyHealth != null)
+            {
+                _enemyHealth.TakeDamage(_damage);
+                canHit = false;
+            }
         }
     }
 

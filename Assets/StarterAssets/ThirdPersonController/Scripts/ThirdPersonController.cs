@@ -14,6 +14,7 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+        public Weapon _weapon;
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -165,6 +166,16 @@ namespace StarterAssets
         {
             Debug.Log("Attack");
             _animator.Play("Attack");
+        }
+
+        public void EnableHitDetection()
+        {
+            _weapon.EnableHitDetection();
+        }
+
+        public void DisableHitDetection()
+        {
+            _weapon.DisableHitDetection();
         }
 
         private void LateUpdate()

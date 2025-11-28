@@ -2,25 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class Billboard : MonoBehaviour
 {
-    
-    public float _healthPoint = 100;
+    private Camera _mainCamera;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        _mainCamera = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-
-        if (_healthPoint <= 0)
-        {
-            Destroy(gameObject);
-        }
+        transform.LookAt(transform.position + _mainCamera.transform.forward);
     }
 }
