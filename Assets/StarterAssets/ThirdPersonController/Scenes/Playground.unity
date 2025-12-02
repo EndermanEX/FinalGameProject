@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &503016296
 GameObject:
@@ -2374,8 +2374,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2939178, y: 0.8673374, z: 0.08148743}
-  m_Center: {x: 0.00000010950654, y: 0.6168133, z: 0.00000017355133}
+  m_Size: {x: 0.2939178, y: 0.95747113, z: 0.61981064}
+  m_Center: {x: -0.0000007527828, y: 0.6618797, z: 0.043914683}
 --- !u!1001 &8345070700268369567
 PrefabInstance:
   m_ObjectHideFlags: 0
